@@ -12,5 +12,6 @@ Before we begin there is a couple of things we will need.
  <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/azure_menu.png" height="80%" width="80%" alt="azuremenu"/>
  Once there hit "Create" in the top right. You will be taken to the create a storage account wizard, create a resource group if you dont have one, name your storage account, pick a region that is close to you. And for redundancy since we dont plan on breaking the bank, set it to LRS (Locally redundant storage)
 <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/csawiz.png" height="80%" width="80%" alt="create a storage account menu"/>
+Once done hit next and for the rest of the options I would just leave as is. Then it will validate your configuration and hit "Create" in the bottom left.
 
 
