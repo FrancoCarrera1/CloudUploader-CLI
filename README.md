@@ -8,4 +8,6 @@ Before we begin there is a couple of things we will need.
 3. Creating an Azure subscription [here](https://azure.microsoft.com/en-us/free/search/?ef_id=_k_CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE), if this is your first time you can create a free acount with $200 in credits.
 
 # Setup
-1. First we must create an Azure Blob Storage Account, we can do that from the homepage of our Azure, by clicking on the side Menu button, and then going to "Storage Accounts"
+1. First we must create an Azure Blob Storage Account, we can do that from the homepage of our Azure, by clicking on the side Menu button, and then going to "Storage Accounts" <img src=https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/azure_menu.png height= width= alt=azuremenu>
+
+
