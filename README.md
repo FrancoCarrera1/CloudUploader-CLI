@@ -11,5 +11,6 @@ Before we begin there is a couple of things we will need.
 1. First we must create an Azure Blob Storage Account, we can do that from the homepage of our Azure, by clicking on the side Menu button, and then going to "Storage Accounts"
  <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/azure_menu.png" height="80%" width="80%" alt="azuremenu"/>
  Once there hit "Create" in the top right. You will be taken to the create a storage account wizard, create a resource group if you dont have one, name your storage account, pick a region that is close to you. And for redundancy since we dont plan on breaking the bank, set it to LRS (Locally redundant storage)
+<img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/csawiz.png" height="80%" width="80%" alt="create a storage account menu"/>
 
 
