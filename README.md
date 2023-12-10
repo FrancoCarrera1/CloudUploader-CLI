@@ -9,7 +9,7 @@ Before we begin there is a couple of things we will need.
    
 
 # Setup
-1. Once we have intstalled the Azure CLI, we are gonna use the <b>az login</b> command to authenticate to our cloud. This is so we can create a storage account. Once logged in we are going to create a resource group, I used Alpha as the name for mine but you can name yours whatever you would like.
+1. Once we have installed the Azure CLI, we are gonna use the <b>az login</b> command to authenticate to our cloud. This is so we can create a storage account. Once logged in we are going to create a resource group, I used Alpha as the name for mine but you can name yours whatever you would like.
 <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/creatergcmd.png" width="80%" height="80%" alt="resource group creating command"/>
 
 Once that is done we will now create the storage account that will have our LRS (Locally Redundant Storage) Blob. We do this using the command.
