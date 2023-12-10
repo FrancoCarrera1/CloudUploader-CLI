@@ -15,7 +15,8 @@ Before we begin there is a couple of things we will need.
 Once done hit next and for the rest of the options I would just leave as is. Then it will validate your configuration and hit "Create" in the bottom left.
 
  Now you will be in re-directed to your storage accounts Overview, in the side menu we want to go to the "Storage Browser to create the Folder where we will upload the files.
- <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/csaoverview.png" height="80%" width="80%" alt="create a storage account menu"/>
+ 
+ <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/csaoverview.png" height="33%" width="33%" alt="create a storage account folder"/>
 
 
 
