@@ -8,20 +8,44 @@ Before we begin there is a couple of things we will need.
 3. Creating an Azure subscription [here](https://azure.microsoft.com/en-us/free/search/?ef_id=_k_CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6Un9y87OfbaiTJZ-agWWiht9O458eQ-9S-fGJZnaPy83eeCWhMP3x-RoCn5sQAvD_BwE), if this is your first time you can create a free acount with $200 in credits.
    
 
-# Setup
+# Creating our Container and getting the environment ready for the tool.
 1. Once we have installed the Azure CLI, we are gonna use the <b>az login</b> command to authenticate to our cloud. This is so we can create a storage account. Once logged in we are going to create a resource group, I used Alpha as the name for mine but you can name yours whatever you would like.
 <img src="https://github.com/FrancoCarrera1/CloudUploader-CLI/blob/main/images/creatergcmd.png" width="80%" height="80%" alt="resource group creating command"/>
 
-Once that is done we will now create the storage account that will have our LRS (Locally Redundant Storage) Blob. We do this using the command.
-<p> <b>az storage account create --name (storage-account-name-here) --resource-group (resource-group-name-here) --location eastus --sku Standard_LRS --kind StorageV2 --allow-blob-public-access false</b></p>
+Once that is done we will now create the storage account that will hold our LRS (Locally Redundant Storage) Blob. We do this using the command.
+```bash 
+   az storage account create --name (storage-account-name-here) --resource-group (resource-group-name-here) --location eastus --sku Standard_LRS --kind StorageV2 --allow-blob-public-access false
+   ```
+And to create the container where we can upload our blobs(files):
+```bash
+az storage container create --name (container-name-here) --account-name (storage-account) --auth-mode login
+```
+2. In order to test our script, we must first set our environment variables in our BASH terminal, this is so that we can authorize acess to Blob storage from the Azure CLI. We could do it with the parameters account-name and account-key, but for more convenience we will set the env. variables AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_KEY. So that everytime we run an az storage command, we dont have to provide this information every single time. But first, you need to know what your key is, the command to display your keys is as follows:
+```bash
+az storage account keys list --account-name (acc-name-here) --resource-group (resource-group-name-here) --output Table
+```
+This will list our account keys, which we will then use to now set both of our enviroment variables using the "export" command in bash:
+```bash
+export AZURE_STORAGE_ACCOUNT="acc name here" ; export AZURE_STORAGE_KEY="key goes here"
+```
+After that is done use the echo command to make sure that the information stored in these environment variables is accurate as it can cause issues down the road. An example would be 
+```bash
+echo $AZURE_STORAGE_ACCOUNT
+```
+And finally we wanna test what we have just done to make sure that we can upload to our container  we will do this using:
+```bash
+az storage blob upload --container-name upload-here --file file.txt
+```
+You might get different error messages here, some things I would do to troubleshot are:
+<ul>
+<li>Make sure you are logged in using "az login"</li>
+<li>Make sure the data in the environment variables is accurate since it is case sensitive to what you have set your storage account name, and your key that we got earlier</li>
+<li>Make sure that when you use the command, the name of your container and the file you are uploading, and any syntax is accurate (check for spelling errors)</li>
+</ul>
 
-Finally, we will create the container which will act as a Folder to where we can upload our files (blobs). We do this using the following command
-<p><b> az storage container create --name (blob-name-here) --account-name (storage-account) --auth-mode login</b></p>
+Now that is enough information to get the users environment and cloud storage setup for the tool, I wont get into how to create the tool, I believe this should be done of ones own accord to gain some experience scripting. In the following I will demonstrate how to download, install, and use the tool to upload files to the container & blobs we just created.
 
-2.
-
-
-
+# Tool Download and Installation
 
 
 
