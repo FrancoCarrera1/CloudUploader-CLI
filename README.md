@@ -36,7 +36,7 @@ And finally we wanna test what we have just done to make sure that we can upload
 ```bash
 az storage blob upload --container-name upload-here --file file.txt
 ```
-You might get different error messages here, some things I would do to troubleshot are:
+You might get different error messages here, some things I would do to troubleshoot are:
 <ul>
 <li>Make sure you are logged in using "az login"</li>
 <li>Make sure the data in the environment variables is accurate since it is case sensitive to what you have set your storage account name, and your key that we got earlier</li>
