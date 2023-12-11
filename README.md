@@ -61,7 +61,7 @@ chmod 777 FCCLIUploader.sh
 # Example use of the tool
 lets say you have a file called "file.txt" in the /home/user/Documents directory(you can use pwd to find this out), you would use the tool as follows.
 ```bash
-./FCCLIFileUploader.sh (container-name-here) /home/user/Documents/file.txt
+./FCCLIUploader.sh (container-name-here) /home/user/Documents/file.txt
 ```
 
 # Final Thoughts
