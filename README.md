@@ -59,7 +59,7 @@ cd CloudUploader-CLI
 chmod 777 FCCLIUploader.sh
 ```
 # Example use of the tool
-lets say you have a file called "file.txt" in the /home/user/Documents directory(you can use pwd to find this out), you would use the tool as follows.
+lets say you have a file called "file.txt" in the /home/user/Documents directory(you can use pwd to find this out), you would use the tool as follows. We could set an env variable so that you dont have to type in the container in every time, but I did not add this in case the user wants to specify what container it goes to, especially if they have multiple ones.
 ```bash
 ./FCCLIUploader.sh (container-name-here) /home/user/Documents/file.txt
 ```
