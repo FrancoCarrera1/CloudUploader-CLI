@@ -54,7 +54,7 @@ git clone https://github.com/FrancoCarrera1/CloudUploader-CLI.git
 ```bash
 cd CloudUploader-CLI
 ```
-3.Give yourself permission over the FCCLIUploader.sh script, and you can now use it, I am install working on an installation script that will add it to your $PATH so that you can use it from any directory, and I hope to get it to upload multiple files, and add more functionality so that you can overwrite the files from the CLI.
+3.Give yourself permission over the FCCLIUploader.sh script, and you can now use it, I am still working on an installation script that will add it to your $PATH so that you can use it from any directory, and I hope to get it to upload multiple files, and add more functionality so that you can overwrite already existing files in the container from the CLI.
 ```bash
 chmod 777 FCCLIUploader.sh
 ```
