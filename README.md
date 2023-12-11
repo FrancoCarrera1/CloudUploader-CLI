@@ -46,6 +46,17 @@ You might get different error messages here, some things I would do to troublesh
 Now that is enough information to get the users environment and cloud storage setup for the tool, I wont get into how to create the tool, I believe this should be done of ones own accord to gain some experience scripting. In the following I will demonstrate how to download, install, and use the tool to upload files to the container & blobs we just created.
 
 # Tool Download and Installation
-
+1.Clone the Repo using: 
+```bash
+git clone https://github.com/FrancoCarrera1/CloudUploader-CLI.git
+```
+2.Change directory to where the tool is using:
+```bash
+cd CloudUploader-CLI
+```
+3.Give your self permissions over the installation script so you are able to execute it
+```bash
+chmod 777 installer.sh
+```
 
 
