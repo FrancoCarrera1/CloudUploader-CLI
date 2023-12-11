@@ -54,9 +54,17 @@ git clone https://github.com/FrancoCarrera1/CloudUploader-CLI.git
 ```bash
 cd CloudUploader-CLI
 ```
-3.Give your self permissions over the installation script so you are able to execute it
+3.Give yourself permission over the FCCLIUploader.sh script, and you can now use it, I am install working on an installation script that will add it to your $PATH so that you can use it from any directory, and I hope to get it to upload multiple files, and add more functionality so that you can overwrite the files from the CLI.
 ```bash
-chmod 777 installer.sh
+chmod 777 FCCLIUploader.sh
 ```
+# Example file of the tool
+lets say you have a file called "file.txt" in the /home/user/Documents directory(you can use pwd to find this out), you would use the tool as follows.
+```bash
+./FCCLIFileUploader.sh (container-name-here) /home/user/Documents/file.txt
+```
+
+# Final Thoughts
+There is still a lot to be improved about the script, more functionality could be added like multiple file uploads, overwriting existing files, and encryption for security. Feel free to collaborate with me on this project, you can HMU on any social medias, submit a pull request or issue.
 
 
